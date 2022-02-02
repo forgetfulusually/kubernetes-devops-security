@@ -1,5 +1,5 @@
 #!/bin/bash
-JENKINS_URL="http://localhost:8080"
+JENKINS_URL="http://devsecops-demo.westeurope.cloudapp.azure.com::8080"
 
 JENKINS_CRUMB=$(curl -s --cookie-jar /tmp/cookies -u admin:admin $JENKINS_URL/crumbIssuer/api/json  | jq .crumb -r) 
 
